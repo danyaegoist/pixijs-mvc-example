@@ -8,9 +8,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <!-- bower components -->
-    <script src="bower_components/pixi/pixi.js"></script>
+    <script src="node_modules/pixi.js/dist/pixi.js"></script>
 
     <!-- source code -->
+    <script src="src/utility/utility.js"></script>
     <script src="src/shape/shape.js"></script>
     <script src="src/shape/shape.child.js"></script>
     <script src="src/core/core.js"></script>
@@ -27,8 +28,7 @@
                 Area: <span class="bold" id="shapesOccupied">5</span>
             </div>
         </div>
-        <div class="body border">
-            <canvas id="viewCanvas"></canvas>
+        <div class="body border" id="viewCanvas">
         </div>
         <div class="footer">
             <div class="button-group">
