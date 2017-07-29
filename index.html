@@ -5,7 +5,7 @@
     <title>Pixijs example</title>
 
     <!-- css -->
-    <style src="css/main.css"></style>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <!-- bower components -->
     <script src="bower_components/pixi/pixi.js"></script>
@@ -20,25 +20,25 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="withBorder counter">
-                Number of shapes <span id="shapesCount">5</span>
+            <div class="border counter">
+                Shapes: <span class="bold" id="shapesCount">5</span>
             </div>
-            <div class="withBorder counter">
-                Surface area occupied p^2: <span id="shapesOccupaed">5</span>
+            <div class="border counter">
+                Area: <span class="bold" id="shapesOccupied">5</span>
             </div>
         </div>
-        <div class="body">
+        <div class="body border">
             <canvas id="viewCanvas"></canvas>
         </div>
         <div class="footer">
             <div class="button-group">
-                <input type="button" value="-" id="shapeCountMinus">
-                <input type="button" value="+" id="shapeCountPlus">
+                <input type="button" class="btn btn-left" value="-" id="shapeCountMinus">
+                <input type="button" class="btn btn-right" value="+" id="shapeCountPlus">
                 <input type="text" id="shapeCount" value="0">
             </div>
             <div class="button-group">
-                <input type="button" value="-" id="gravityMinus">
-                <input type="button" value="+" id="gravityPlus">
+                <input type="button" class="btn btn-left" value="-" id="gravityMinus">
+                <input type="button" class="btn btn-right" value="+" id="gravityPlus">
                 <input type="text" id="gravityCount" value="0">
             </div>
         </div>
