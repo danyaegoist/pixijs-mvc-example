@@ -1,0 +1,25 @@
+{
+  "name": "pixijsexampl",
+  "homepage": "https://github.com/danyaegoist/pixijs-mvc-example",
+  "authors": [
+    "danyaegoist <cacxfff@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "pixi.js",
+    "mvc",
+    "example"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "pixi": "pixijs#^1.3.0"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixijs example</title>
+
+    <!-- css -->
+    <style src="css/main.css"></style>
+
+    <!-- bower components -->
+    <script src="bower_components/pixi/pixi.js"></script>
+
+    <!-- source code -->
+    <script src="src/shape/shape.js"></script>
+    <script src="src/shape/shape.child.js"></script>
+    <script src="src/core/core.js"></script>
+    <script src="src/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="withBorder counter">
+                Number of shapes <span id="shapesCount">5</span>
+            </div>
+            <div class="withBorder counter">
+                Surface area occupied p^2: <span id="shapesOccupaed">5</span>
+            </div>
+        </div>
+        <div class="body">
+            <canvas id="viewCanvas"></canvas>
+        </div>
+        <div class="footer">
+            <div class="button-group">
+                <input type="button" value="-" id="shapeCountMinus">
+                <input type="button" value="+" id="shapeCountPlus">
+                <input type="text" id="shapeCount" value="0">
+            </div>
+            <div class="button-group">
+                <input type="button" value="-" id="gravityMinus">
+                <input type="button" value="+" id="gravityPlus">
+                <input type="text" id="gravityCount" value="0">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
