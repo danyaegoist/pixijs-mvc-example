@@ -1,8 +1,8 @@
 
-window.addEventListener('load', function(){
-    
+window.addEventListener('load', function () {
+
     var core = new Core({});
-    var coreView = new CoreView({
+    var view = new CoreView({
         shapesCounter: document.getElementById('shapesCounter'),
         occupaedByShapes: document.getElementById('occupaedByShapes'),
         shapeCountMinus: document.getElementById('shapeCountMinus'),
@@ -14,8 +14,8 @@ window.addEventListener('load', function(){
         canvasContainer: document.getElementById('viewCanvas'),
         model: core
     });
-    var coreControl = new CoreControl({
+    var control = new CoreControl({
         model: core,
-        view: coreView
+        view: view
     });
 });
