@@ -10,7 +10,7 @@ function Core(options) {
     this.shapes = [];
     this.toLastSecond = 0;
 
-    this.app = new PIXI.Application(this.screenWidth, this.screenHeight, { backgroundColor: this.backgroundColor });
+    this.app = new PIXI.Application(this.screenWidth, this.screenHeight, { backgroundColor: this.backgroundColor, roundPixels: true });
     this.app.stage.interactive = true;
     this.app.stage.hitArea = new PIXI.Rectangle(0, 0, this.screenWidth, this.screenHeight);
 

@@ -28,7 +28,8 @@ Shape.prototype = {
     },
     update: function (gravity) {
         this.speed += +gravity;
-        this.sprite.y += +this.speed;
+        this.sprite.y += this.speed;
+        this.sprite.y = Math.ceil(this.sprite.y);
     },
     generateSprite: function () {
 
