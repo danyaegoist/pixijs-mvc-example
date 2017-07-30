@@ -9,13 +9,13 @@ Shape.prototype = {
     init: function (options) {
 
         this.generateSprite();
-        this.sprite.x = options.x !== undefined ? options.x : Math.random() * 800;
-        this.sprite.y = options.y !== undefined ? options.y : -10;
+        this.sprite.x = options.x !== undefined ? options.x : Math.random() * (options.parent.screenWidth -20) + 20;
+        this.sprite.y = options.y !== undefined ? options.y : -50;
         this.speed = options.speed !== undefined ? options.speed : 0;
 
-        this.shapeClicked = new Event();
-        this.removeMe = new Event();
-        this.changeColorOfMyBrothers = new Event();
+        this.onShapeClicked = new Event();
+        this.onRemoveMe = new Event();
+        this.onChangeColorOfMyBrothers = new Event();
     },
     remove: function(){
         this.sprite.destroy({
@@ -52,11 +52,11 @@ Shape.prototype = {
 
         //
         if (false) {
-            this.removeMe.notify(this);
+            this.onRemoveMe.notify(this);
         }
 
         if (false) {
-            this.changeColorOfMyBrothers();
+            this.onChangeColorOfMyBrothers();
         }
     }
 };

@@ -53,6 +53,6 @@ html, body {
 }
 
 .button-group input[type="text"]{
-    width: 50px;
+    width: 150px;
     height: 24px;
 }
