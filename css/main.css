@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -300px 0 0 -400px;
+}
+
+.header {
+    overflow: auto;
+}
+
+.counter {
+    min-width: 100px;
+    float: left;
+}
+
+.btn {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-left{
+    border-radius: 15px 0 0 15px;
+}
+
+.btn-right{
+    
+    border-radius: 0 15px 15px 0;
+}
+
+.body {
+    width: 800px;
+    height: 600px;
+}
+
+.footer {
+    margin-top: 10px;
+}
+
+.button-group {
+    float: left;
+    margin-right: 40px;
+}
+
+.button-group input[type="text"]{
+    width: 150px;
+    height: 24px;
+}

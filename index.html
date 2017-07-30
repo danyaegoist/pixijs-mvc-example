@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixijs example</title>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- bower components -->
+    <script src="node_modules/pixi.js/dist/pixi.js"></script>
+
+    <!-- source code -->
+    <script src="src/utility/utility.js"></script>
+    <script src="src/shape/shape.js"></script>
+    <script src="src/shape/shape.child.js"></script>
+    <script src="src/core/core.js"></script>
+    <script src="src/core/core.view.js"></script>
+    <script src="src/core/core.control.js"></script>
+    <script src="src/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="border counter">
+                Shapes: <span class="bold" id="shapesCounter">5</span>
+            </div>
+            <div class="border counter">
+                Area: <span class="bold" id="occupaedByShapes">5</span>
+            </div>
+        </div>
+        <div class="body border" id="viewCanvas" oncontextmenu="return false;">
+        </div>
+        <div class="footer">
+            <div class="button-group">
+                <input type="button" class="btn btn-left" value="-" id="shapeCountMinus">
+                <input type="button" class="btn btn-right" value="+" id="shapeCountPlus">
+                <input type="text" id="shapeCount" value="0">
+            </div>
+            <div class="button-group">
+                <input type="button" class="btn btn-left" value="-" id="gravityCountMinus">
+                <input type="button" class="btn btn-right" value="+" id="gravityCountPlus">
+                <input type="text" id="gravityCount" value="0">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
