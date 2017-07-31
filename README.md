@@ -10,7 +10,7 @@ $> npm install
 
 Left mouse click on black area to add random `shape`
 Left mouse click on `shape` to remove them
-Right mouse click on `shape` to change color of all `shape` of same `type`
+Right mouse click on `shape` to change color of all `shapes` of same `type`
 
 Also you can see controls on the bottom of screen.
 First set of controls change `number of shapes` per second.

@@ -61,9 +61,9 @@ Core.prototype = {
     },
     interactionOnShape: function (sender, e) {
 
-        if (e.data.button == 2) {
+        if (e.data.button == 0) {
             this.removeShape(sender);
-        } else if (e.data.button == 0) {
+        } else if (e.data.button == 2) {
             this.setShapesColor(sender.type);
         }
     },
